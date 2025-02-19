@@ -9,12 +9,13 @@ import utils.Hooks;
 
 public class Exercise1 extends Hooks {
 	public static void main(String[] args) throws InterruptedException {
-
+// and also I was not able to use Chrome 
 		setUp("edge");
 		driver.get("https://ntkhr.noortecktraining.com/web/index.php/auth/login");
 		Thread.sleep(3000);
-        
-		// I added the userName as admin and password as admin123 give me invalid Cerdentials so I pass this one
+
+		// I added the userName as admin and password as admin123 give me invalid
+		// Cerdentials so I pass this one
 		WebElement usernameField = driver.findElement(By.name("username"));
 		usernameField.sendKeys("ntk-admin");
 
